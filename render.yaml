@@ -2,7 +2,7 @@ services:
   - type: web
     name: whatsapp-clone
     env: node
-    buildCommand: npm install && npm run build && npm run db:push --force
+    buildCommand: chmod +x build.sh && ./build.sh
     startCommand: npm start
     plan: free
     envVars:
